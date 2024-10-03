@@ -22,7 +22,7 @@ const App = () => {
         let offset = screenWidth < 1024 ? 150 : 100;
 
         const elementPosition = targetElement.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - offset;
+        const offsetPosition = elementPosition + window.scrollY - offset;
 
         window.scrollTo({
           top: offsetPosition,
